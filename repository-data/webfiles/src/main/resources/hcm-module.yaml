@@ -1,0 +1,5 @@
+group: 
+  name: myproject-15-azure-sso-oauth2
+project: myproject-15-azure-sso-oauth2
+module:
+  name: myproject-15-azure-sso-oauth2-repository-data-webfiles

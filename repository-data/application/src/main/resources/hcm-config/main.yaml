@@ -1,0 +1,5 @@
+definitions:
+  namespace:
+    myproject15azuressooauth2:
+      uri: http://www.myproject15azuressooauth2.com/myproject15azuressooauth2/nt/1.0
+      cnd: namespaces/myproject-15-azure-sso-oauth2.cnd

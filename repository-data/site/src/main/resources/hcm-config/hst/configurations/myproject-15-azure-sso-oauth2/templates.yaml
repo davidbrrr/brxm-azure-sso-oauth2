@@ -1,0 +1,19 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myproject15azuressooauth2/hst:templates:
+      jcr:primaryType: hst:templates
+      /base-layout:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject15azuressooauth2/base-layout.ftl
+      /base-top-menu:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject15azuressooauth2/base-top-menu.ftl
+      /base-footer:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject15azuressooauth2/base-footer.ftl
+      /homepage-main:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject15azuressooauth2/homepage-main.ftl
+      /pagenotfound-main:
+        jcr:primaryType: hst:template
+        hst:renderpath: webfile:/freemarker/myproject15azuressooauth2/pagenotfound-main.ftl

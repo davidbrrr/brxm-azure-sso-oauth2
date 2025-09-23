@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myproject15azuressooauth2/hst:workspace:
+      jcr:primaryType: hst:workspace

@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hippo:namespaces/myproject15azuressooauth2:
+      jcr:primaryType: hipposysedit:namespace
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 20540c3d-3394-47b6-acce-44cbe3f025db

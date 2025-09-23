@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myproject15azuressooauth2/hst:catalog:
+      jcr:primaryType: hst:catalog
+      /myproject15azuressooauth2-catalog:
+        jcr:primaryType: hst:containeritempackage

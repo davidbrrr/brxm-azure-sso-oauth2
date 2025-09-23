@@ -1,0 +1,7 @@
+/content/gallery/myproject15azuressooauth2:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 98eb53bd-d108-4692-b15c-90208e137d69
+  hippo:name: My Project
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']

@@ -1,0 +1,7 @@
+group: 
+  name: myproject-15-azure-sso-oauth2
+  after: hippo-cms
+project: myproject-15-azure-sso-oauth2
+module: 
+  name: myproject-15-azure-sso-oauth2-repository-data-development
+  after: myproject-15-azure-sso-oauth2-repository-data-application

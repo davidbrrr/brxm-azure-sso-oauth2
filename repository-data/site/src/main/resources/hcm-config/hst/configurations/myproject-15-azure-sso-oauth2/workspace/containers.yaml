@@ -1,0 +1,34 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/myproject15azuressooauth2/hst:workspace/hst:containers:
+      jcr:primaryType: hst:containercomponentfolder
+      /base:
+        jcr:primaryType: hst:containercomponentfolder
+        /top:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 264ed386-7b10-4d04-8e52-8179706d71ae
+          hst:label: Top
+          hst:xtype: hst.vbox
+        /footer:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: e4c4032f-dc54-4cc5-8bcf-15365e8974fa
+          hst:label: Footer
+          hst:xtype: hst.vbox
+      /homepage:
+        jcr:primaryType: hst:containercomponentfolder
+        /main:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 9299bb6f-008a-4b8f-bbc8-fcd41b44bc9b
+          hst:label: Home Page Main
+          hst:xtype: hst.vbox
+      /pagenotfound:
+        jcr:primaryType: hst:containercomponentfolder
+        /main:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 2b434908-1972-4be1-bcef-bdf9bd985c16
+          hst:label: Page-Not-Found Main
+          hst:xtype: hst.vbox

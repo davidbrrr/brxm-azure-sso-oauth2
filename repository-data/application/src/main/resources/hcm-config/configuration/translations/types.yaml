@@ -1,0 +1,32 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/myproject15azuressooauth2:bannerdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Banner
+        myproject15azuressooauth2:content: Content
+        myproject15azuressooauth2:image: Image
+        myproject15azuressooauth2:link: Link
+        myproject15azuressooauth2:title: Title
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Banner
+        myproject15azuressooauth2:content: Inhoud
+        myproject15azuressooauth2:image: Afbeelding
+        myproject15azuressooauth2:link: Link
+        myproject15azuressooauth2:title: Titel
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Bannière
+        myproject15azuressooauth2:content: Contenu
+        myproject15azuressooauth2:image: Image
+        myproject15azuressooauth2:link: Lien
+        myproject15azuressooauth2:title: Titre
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Banner
+        myproject15azuressooauth2:content: Inhalt
+        myproject15azuressooauth2:image: Abbildung
+        myproject15azuressooauth2:link: Link
+        myproject15azuressooauth2:title: Titel

@@ -1,0 +1,5 @@
+definitions:
+  config:
+    /hst:hst/hst:sites/myproject15azuressooauth2:
+      jcr:primaryType: hst:site
+      hst:content: /content/documents/myproject15azuressooauth2

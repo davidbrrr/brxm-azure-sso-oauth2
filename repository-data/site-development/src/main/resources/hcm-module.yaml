@@ -1,0 +1,6 @@
+site: myproject-15-azure-sso-oauth2
+group: myproject-15-azure-sso-oauth2
+project: myproject-15-azure-sso-oauth2
+module:
+  name: myproject-15-azure-sso-oauth2-repository-data-site-development
+  after: myproject-15-azure-sso-oauth2-repository-data-site
