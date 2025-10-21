@@ -1,0 +1,51 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:security/ldaps:
+      jcr:primaryType: hippoldap:securityprovider
+      hippoldap:authentication: simple
+      hippoldap:credentials: SSO_LDAP_CREDENTIALS
+      hippoldap:disabled: true
+      hippoldap:initialfactory: com.sun.jndi.ldap.LdapCtxFactory
+      hippoldap:principal: SSO_LDAP_PRINCIPAL
+      hippoldap:providerurl: ''
+      hippoldap:searchbase: ''
+      hipposys:classname: org.bloomreach.xm.cms.sso.CustomLdapSecurityProvider
+      /hipposys:userprovider:
+        jcr:primaryType: hippoldap:userprovider
+        hippoldap:class: org.bloomreach.xm.cms.sso.AzureUserManager
+        hipposys:dirlevels: 0
+        /hippoldap:search:
+          jcr:primaryType: hippoldap:usersearch
+          hippoldap:basedn: ''
+          hippoldap:filter: (&(cn=*)(objectCategory=organizationalPerson))
+          hippoldap:nameattribute: cn
+        /hippoldap:mapping[1]:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: uid
+          hippoldap:target: ldapuid
+        /hippoldap:mapping[2]:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: sn
+          hippoldap:target: lastname
+        /hippoldap:mapping[3]:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: givenName
+          hippoldap:target: firstname
+      /hipposys:groupprovider:
+        jcr:primaryType: hippoldap:groupprovider
+        hipposys:dirlevels: 0
+        /hippoldap:search:
+          jcr:primaryType: hippoldap:groupsearch
+          hippoldap:basedn: ''
+          hippoldap:filter: (cn=*)
+          hippoldap:memberattribute: member
+          hippoldap:membernamematcher: <dn>
+          hippoldap:nameattribute: cn
+        /hippoldap:mapping:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: description
+          hippoldap:target: description

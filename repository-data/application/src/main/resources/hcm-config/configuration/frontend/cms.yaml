@@ -1,0 +1,30 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/cms-services/logoutService:
+      plugin.class: org.bloomreach.xm.cms.sso.LogoutService
+    /hippo:configuration/hippo:frontend/cms/cms-services/navAppSettingsService:
+      .meta:order-before: defaultEditorFactory
+    /hippo:configuration/hippo:frontend/cms/cms-services/passwordValidationService:
+      .meta:order-before: defaultEditorFactory
+    /hippo:configuration/hippo:frontend/cms/cms-services/defaultEditorFactory:
+      .meta:order-before: assetProcessorService
+    /hippo:configuration/hippo:frontend/cms/cms-services/hippostdEditorFactory:
+      .meta:order-before: assetProcessorService
+    /hippo:configuration/hippo:frontend/cms/cms-services/layoutProvider:
+      .meta:order-before: assetProcessorService
+    /hippo:configuration/hippo:frontend/cms/cms-services/assetProcessorService:
+      .meta:order-before: DocumentValueListProvider
+    /hippo:configuration/hippo:frontend/cms/cms-services/assetValidationService:
+      .meta:order-before: DocumentValueListProvider
+    /hippo:configuration/hippo:frontend/cms/cms-services/galleryProcessorService:
+      .meta:order-before: DocumentValueListProvider
+    /hippo:configuration/hippo:frontend/cms/cms-services/imageValidationService:
+      .meta:order-before: htmlDiffService
+    /hippo:configuration/hippo:frontend/cms/cms-services/htmlDiffService:
+      .meta:order-before: DocumentValueListProvider
+    /hippo:configuration/hippo:frontend/cms/cms-services/localeProviderService:
+      .meta:order-before: DocumentValueListProvider
+    /hippo:configuration/hippo:frontend/cms/cms-services/treeNodeIconService:
+      .meta:order-before: DocumentValueListProvider
+    /hippo:configuration/hippo:frontend/cms/cms-services/DocumentValueListProvider:
+      .meta:order-before: logoutService

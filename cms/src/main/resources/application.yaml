@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /cms
+  forward-headers-strategy: framework
+
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: ${SSO_TENANT_ID}
+        credential:
+          client-id: ${SSO_APP_ID}
+          client-secret: ${SSO_APP_SECRET}
+
+logging:
+  level:
+    org:
+      springframework:
+        security: info

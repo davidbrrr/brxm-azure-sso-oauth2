@@ -5,7 +5,7 @@
     <cmsModule>cms</cmsModule>
     <confirmParams>true</confirmParams>
     <developmentSubModule>development</developmentSubModule>
-    <enterprise>false</enterprise>
+    <enterprise>true</enterprise>
     <extraTemplates>true</extraTemplates>
     <hstRoot>/hst:myproject15azuressooauth2</hstRoot>
     <projectNamespace>myproject15azuressooauth2</projectNamespace>
