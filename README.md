@@ -12,28 +12,28 @@ SSO integration using Azure AD OAuth2 with LDAP-backed user management. Toggled 
 
 ## Classes
 
-### SecurityConfig
+### [SecurityConfig](cms/src/main/java/org/bloomreach/xm/cms/sso/SecurityConfig.java)
 Spring Security configuration extending `AadWebSecurityConfigurerAdapter`. When SSO is enabled, secures all CMS endpoints except utility paths (`/ping`, `/ws/**`, static assets). Supports local login bypass via `x-local-login` header. Configures Azure AD logout redirect.
 
-### LoginFilter
+### [LoginFilter](cms/src/main/java/org/bloomreach/xm/cms/sso/LoginFilter.java)
 Servlet filter that bridges Spring Security to the CMS. Extracts the authenticated principal from `SecurityContextHolder` and sets `UserCredentials` on the request with a dummy password and `providerId=ldaps`.
 
-### AzureUserManager
+### [AzureUserManager](cms/src/main/java/org/bloomreach/xm/cms/sso/AzureUserManager.java)
 Extends `LdapUserManager`. Authenticates users by matching the Spring Security principal against the provided credentials. Direct LDAP password authentication is disabled.
 
-### CustomLdapSecurityProvider
+### [CustomLdapSecurityProvider](cms/src/main/java/org/bloomreach/xm/cms/sso/CustomLdapSecurityProvider.java)
 Extends `LdapSecurityProvider`. Reads LDAP bind credentials from environment variables instead of storing them directly in the JCR repository. Uses `CredentialsProvider` for extraction.
 
-### CustomSyncJob
+### [CustomSyncJob](cms/src/main/java/org/bloomreach/xm/cms/sso/CustomSyncJob.java)
 Extends `LdapSecurityProvider.SyncJob`. Same env-var credential resolution as `CustomLdapSecurityProvider` for the LDAP sync process.
 
-### CredentialsProvider
+### [CredentialsProvider](cms/src/main/java/org/bloomreach/xm/cms/sso/CredentialsProvider.java)
 Interface with a default method that resolves LDAP principal/password from environment variable names stored in JCR node properties.
 
-### LogoutService
+### [LogoutService](cms/src/main/java/org/bloomreach/xm/cms/sso/LogoutService.java)
 Extends `CmsLogoutService`. Redirects to `/logout` after CMS-internal logout, triggering the Azure AD sign-out flow.
 
-### SsoConstants
+### [SsoConstants](cms/src/main/java/org/bloomreach/xm/cms/sso/SsoConstants.java)
 Shared constants: `SSO_ENABLED`, logout URL/JSP path, and local login header name/value.
 
 ## Environment Variables
