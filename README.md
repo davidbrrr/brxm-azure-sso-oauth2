@@ -36,6 +36,11 @@ Extends `CmsLogoutService`. Redirects to `/logout` after CMS-internal logout, tr
 ### [SsoConstants](cms/src/main/java/org/bloomreach/xm/cms/sso/SsoConstants.java)
 Shared constants: `SSO_ENABLED`, logout URL/JSP path, and local login header name/value.
 
+## Configuration
+
+### [application.yaml](cms/src/main/resources/application.yaml)
+Spring Boot configuration for the Azure AD integration. Binds `SSO_TENANT_ID`, `SSO_APP_ID`, and `SSO_APP_SECRET` to the Azure Active Directory Spring Cloud starter. Sets the CMS servlet context path to `/cms` and enables framework-level forwarded header handling.
+
 ## Environment Variables
 
 | Variable | Description |
